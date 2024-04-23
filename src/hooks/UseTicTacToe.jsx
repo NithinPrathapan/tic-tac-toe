@@ -48,7 +48,10 @@ const useTicTacToe = () => {
     if (!board.includes(null)) return "its a draw";
     return `Player ${isNext ? "X" : "O"} turn`;
   };
-  const resetGame = () => {};
+  const resetGame = () => {
+    setBoard(initialBoard());
+    setIsNext(true);
+  };
 
   return [board, handleClick, resetGame, getStatusMessage, calculateWinner];
 };
