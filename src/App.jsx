@@ -8,7 +8,7 @@ const App = () => {
     <div className="game">
       <div className="status">
         Player X Turn
-        <button>Reset Game</button>
+        <button className="reset-button">Reset Game</button>
       </div>
       <div className="board">
         {board.map((_, index) => {
