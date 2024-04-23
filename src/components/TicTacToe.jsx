@@ -10,7 +10,7 @@ const TicTacToe = () => {
     <div className="game">
       <div className="status">
         {getStatusMessage()}
-        Player X Turn
+
         <button
           className="reset-button"
           onClick={() => {
